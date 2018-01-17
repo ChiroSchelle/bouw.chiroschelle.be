@@ -1,7 +1,0 @@
-
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^cpanel.chiroschelle.be$ [OR]
-RewriteCond %{HTTP_HOST} ^www.cpanel.chiroschelle.be$
-RewriteRule ^(.*)$ http://chiroschelle.be/cpanel [R=301,L]
-
-AddType message/rfc822 eml

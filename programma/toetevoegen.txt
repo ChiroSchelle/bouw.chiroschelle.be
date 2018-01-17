@@ -1,8 +1,0 @@
-Toe te voegen functies:
--aanpassen van programma
--leden/invoeren enkel zichtbaar als ingelogd
--goedkeuring voor nieuwe leden
--mogelijkheid om passwoord aan te passen
--goepie-deadline OK, hard-coded
--export naar pdf
--afdrukweergave

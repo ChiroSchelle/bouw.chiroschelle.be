@@ -1,3 +1,0 @@
-[11-Sep-2012 23:18:27] PHP Parse error:  syntax error, unexpected T_BREAK, expecting ',' or ';' in /home/c7070chi/public_html/ruben/Inschrijvingsformulieren/quiz.php on line 13
-[11-Sep-2012 23:18:35] PHP Fatal error:  Cannot re-assign $this in /home/c7070chi/public_html/ruben/Inschrijvingsformulieren/inclQuiz/classes.php on line 81
-[11-Sep-2012 23:24:11] PHP Fatal error:  Call to undefined function  validmail() in /home/c7070chi/public_html/ruben/Inschrijvingsformulieren/inclQuiz/classes.php on line 18

@@ -1,4 +1,0 @@
-AddType message/rfc822 eml
-
-RewriteEngine on
-RewriteRule ^afdeling/(.*)/ uitlezen.php?toon=afdeling&afdeling=$1 
