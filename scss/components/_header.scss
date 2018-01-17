@@ -1,0 +1,130 @@
+.skip-link {
+	display: none;
+}
+
+.top-header {
+	background-color: #1F1E1D;
+
+	ul {
+		padding: 0;
+		list-style-type: none;
+		@extend .clearfix;
+		text-align: right;
+		margin: 0;
+
+		li {
+			display: block;
+			float: right;
+			//background-color: #FFF;
+			padding: 5px 10px;
+
+			a {
+				color: #FFF;
+			}
+		}
+	}
+}
+
+.site-header {
+	margin: 0;
+	padding: 0 0 0 0;
+
+	width: 100%;
+	height: 30vh;
+	box-sizing: border-box;
+
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header2.jpg");
+	background-position: center;
+	-webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
+
+	.site-branding {
+		@extend .clearfix;
+		.site-logo {
+			margin: 0 auto;
+			padding: 20% 0 0 0;
+			display: block;
+
+			max-width: 80%;
+		}
+
+		.site-info-wrapper {
+			float: left;
+			margin-left: 10px;
+			display: none;
+
+			.site-title {
+				margin: 0;
+				padding: 30px 0 0 0;
+
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 58px;
+				font-size: 5.8rem;
+
+				a {
+					color: #FFF;
+
+					&:hover {
+						text-decoration: none;
+						color: #FFF;
+					}
+				}
+			}
+
+			.site-description {
+				margin: 0;
+				padding: 0;
+
+				text-transform: uppercase;
+
+				font-family: Roboto;
+				font-weight: 300;
+				font-size: 19.6px;
+				font-size: 1.96rem;
+
+				color: #FFF;
+			}
+
+		}
+	}
+}
+
+@media (min-width : 768px) {
+	.site-header {
+		//height: 50vh;
+		height: auto;
+		//padding: 30vh 0 0 0;
+		background-image: none;
+		.site-branding {
+			position: relative;
+			margin-top: 350px;
+			margin-bottom: 25px;
+			
+			.site-logo {
+				margin: 0;
+				padding: 0;
+				display: block;
+
+				float: left;
+				max-height: 14vh;
+			}
+
+			.site-info-wrapper {
+				display: block;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+	    width: 1170px;
+	}
+}

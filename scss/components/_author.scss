@@ -1,0 +1,44 @@
+.profile {
+	margin: 45px 0;
+	text-align: center;
+
+	.info-wrapper {
+		font-weight: 500;
+	}
+
+	.avatar {
+		border-radius: 50%;
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.vragenlijst-wrapper {
+	padding-top: 45px;
+	padding-bottom: 45px;
+
+	.vragenlijst {
+		font-size: 14px;
+		font-size: 1.4rem;
+
+		.vraag {
+			box-sizing: border-box;
+			padding: 5px 2% 5px 0;
+			width: 50%;
+			font-weight: 500;
+		}
+
+		.antwoord {
+			padding: 5px 0;
+		}
+	}
+}
+
+
+@media (min-width : 992px) {
+	.profile {
+		margin: 100px 0;
+		border-right: 1px solid #DCDCDC;
+	}
+}

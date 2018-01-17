@@ -1,0 +1,70 @@
+html {
+	font-size:62.5%;
+}
+
+body {
+	font-family: Roboto;
+
+	//background-image: url("img/header2.jpg");
+	//background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header2.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 22px;
+	line-height: 2.2rem;
+	background-color: #F4F4F4;
+}
+
+.main-container {
+	margin: 0 auto;
+	padding: 0 0 30px;
+}
+
+.card {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    background-color: #FFF;
+}
+
+.padding {
+	padding: 15px;
+}
+
+.blog .post .entry-content {
+	img {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.padding {
+		padding: 15px 50px;
+	}
+
+	.background {
+		height:100%;
+		width:100%;
+		position:fixed;
+		background-image: url("img/header2.jpg");
+		background-position: center;
+		background-size: cover;
+		z-index: -1;
+	}
+
+	.type-page {
+		padding: 0 25px;
+	}
+
+	.main-container {
+		//margin: -250px auto 75px;
+		padding: 0 0 50px 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+	    width: 1024px;
+	}
+}

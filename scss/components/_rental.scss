@@ -1,0 +1,17 @@
+.page-template-rental {
+	.site-header {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/rental-bg.jpg");
+	}
+}
+
+@media (min-width : 768px) {
+	.page-template-rental {
+		.background {
+		    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/rental-bg.jpg");
+		}
+
+		.site-header {
+			background-image: none;
+		}
+	}
+}

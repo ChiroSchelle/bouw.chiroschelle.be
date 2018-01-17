@@ -1,0 +1,106 @@
+.site-footer {
+	margin: 0;
+	padding: 35px 0;
+
+	width: 100%;
+	min-height: 20vh;
+
+	background-color: #1F1E1D;
+	background-image: url('img/afdelingskleuren.png');
+	background-repeat: repeat-x;
+
+	img {
+		max-width: 100%;
+	}
+
+	h3 {
+		margin: 5px 0 10px 0;
+		color: #FFF;
+		text-transform: uppercase;
+		font-size: 18px;
+		font-size: 1.8rem;
+	}
+
+	.footer-logo {
+		height: 400px;
+	}
+
+	.contact-wrapper {
+
+		color: #FFF;
+
+		.street {
+			display: block;
+		}
+
+		.city {
+			display: block;
+		}
+
+		.mail {
+			margin-top: 4px;
+			display: block;
+		}
+	}
+
+	.social {
+		margin: 0;
+		padding: 0;
+
+		list-style-type: none;
+
+		@extend .clearfix;
+
+		li {
+			display: inline-block;
+			margin-right: 5px;
+			a {
+				display: block;
+				text-indent: -9999px;
+				width: 35px;
+				height: 35px;
+
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+
+				&.facebook {
+					background-image: url('img/social-icons/fb.svg');
+				}
+
+				&.twitter {
+					background-image: url('img/social-icons/twitter.svg');
+				}
+
+				&.youtube {
+					background-image: url('img/social-icons/youtube.svg');
+				}
+			}
+		}
+	}
+
+	.news-letter {
+		padding-bottom: 15px;
+		.mailchimp {
+			input[type="email"] {
+				padding: 8px 15px;
+				width: 100%;
+			}
+
+			.button {
+				padding: 5px 15px;
+				margin-top: 15px;
+				border: 2px solid #FFF;
+				color: #FFF;
+				background-color: transparent;
+			}
+
+		}
+	}
+}
+
+@media (min-width : 768px) {
+	.site-footer {
+		margin: 45px 0 0 0;
+	}
+}
