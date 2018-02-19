@@ -68,7 +68,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'chiro-schelle' ); ?></a>
 	
-	<div class="top-header">
+	<!-- <div class="top-header">
 		<div class="container">
 			<ul>
 				<li>
@@ -82,13 +82,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</li>
 			</ul>
 		</div>
-	</div>
+	</div> -->
 
 	<header class="site-header">
 
 		<div class="container">
 			<div class="site-branding">
-				<a href="<?php bloginfo("url") ?>" id="homelink"><img class="site-logo" src="<?php bloginfo('template_directory'); ?>/img/chirologo-wit.png" alt="logo Chiro Schelle" title="logo Chiro Schelle" /></a>
+				<a href="<?php bloginfo("url") ?>" id="homelink"><img class="site-logo" src="<?php bloginfo('template_directory'); ?>/img/logo-bouw-white-on-black.svg" alt="logo Chiro Schelle" title="logo Chiro Schelle" /></a>
 				<!-- <div class="site-info-wrapper">
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
@@ -105,5 +105,3 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 		</nav>
-
-

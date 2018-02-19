@@ -19,7 +19,7 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
 /* line 31, scss/style.scss */
 .clearfix:after, .top-header ul:after, .site-header .site-branding:after, .main-navigation ul:after, .info-menu .menu:after, .site-footer .social:after, .leaders .group ul li:after, .post:after, .comment-list .comment .comment-body:after {
   content: "";
@@ -65,57 +65,57 @@ body {
   background-color: #F4F4F4;
 }
 
-/* line 21, scss/components/_main.scss */
+/* line 18, scss/components/_main.scss */
 .main-container {
   margin: 0 auto;
   padding: 0 0 30px;
 }
 
-/* line 26, scss/components/_main.scss */
+/* line 23, scss/components/_main.scss */
 .card {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   background-color: #FFF;
 }
 
-/* line 31, scss/components/_main.scss */
+/* line 28, scss/components/_main.scss */
 .padding {
   padding: 15px;
 }
 
-/* line 36, scss/components/_main.scss */
+/* line 33, scss/components/_main.scss */
 .blog .post .entry-content img {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 42, scss/components/_main.scss */
+  /* line 39, scss/components/_main.scss */
   .padding {
     padding: 15px 50px;
   }
 
-  /* line 46, scss/components/_main.scss */
+  /* line 43, scss/components/_main.scss */
   .background {
     height: 100%;
     width: 100%;
     position: fixed;
-    background-image: url("img/header2.jpg");
+    background-image: url("img/header-bouw.jpg");
     background-position: center;
     background-size: cover;
     z-index: -1;
   }
 
-  /* line 56, scss/components/_main.scss */
+  /* line 53, scss/components/_main.scss */
   .type-page {
     padding: 0 25px;
   }
 
-  /* line 60, scss/components/_main.scss */
+  /* line 57, scss/components/_main.scss */
   .main-container {
     padding: 0 0 50px 0;
   }
 }
 @media (min-width: 1200px) {
-  /* line 67, scss/components/_main.scss */
+  /* line 64, scss/components/_main.scss */
   .container {
     width: 1024px;
   }
@@ -193,7 +193,7 @@ input[type="text"] {
   width: 100%;
   height: 30vh;
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header-bouw.jpg");
   background-position: center;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -265,7 +265,7 @@ input[type="text"] {
     padding: 0;
     display: block;
     float: left;
-    max-height: 14vh;
+    height: 125px;
   }
   /* line 119, scss/components/_header.scss */
   .site-header .site-branding .site-info-wrapper {
@@ -940,243 +940,6 @@ input[type="text"] {
     width: 60%;
   }
 }
-/* Preload images */
-/* line 2, scss/components/_lightbox.scss */
-body:after {
-  content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
-  display: none;
-}
-
-/* line 7, scss/components/_lightbox.scss */
-.lightboxOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  background-color: black;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
-  display: none;
-}
-
-/* line 18, scss/components/_lightbox.scss */
-.lightbox {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  z-index: 10000;
-  text-align: center;
-  line-height: 0;
-  font-weight: normal;
-}
-
-/* line 28, scss/components/_lightbox.scss */
-.lightbox .lb-image {
-  display: block;
-  height: auto;
-  max-width: inherit;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-}
-
-/* line 39, scss/components/_lightbox.scss */
-.lightbox a img {
-  border: none;
-}
-
-/* line 43, scss/components/_lightbox.scss */
-.lb-outerContainer {
-  position: relative;
-  background-color: white;
-  *zoom: 1;
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-
-/* line 57, scss/components/_lightbox.scss */
-.lb-outerContainer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* line 63, scss/components/_lightbox.scss */
-.lb-container {
-  padding: 4px;
-}
-
-/* line 67, scss/components/_lightbox.scss */
-.lb-loader {
-  position: absolute;
-  top: 43%;
-  left: 0;
-  height: 25%;
-  width: 100%;
-  text-align: center;
-  line-height: 0;
-}
-
-/* line 77, scss/components/_lightbox.scss */
-.lb-cancel {
-  display: block;
-  width: 32px;
-  height: 32px;
-  margin: 0 auto;
-  background: url(../images/loading.gif) no-repeat;
-}
-
-/* line 85, scss/components/_lightbox.scss */
-.lb-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 10;
-}
-
-/* line 94, scss/components/_lightbox.scss */
-.lb-container > .nav {
-  left: 0;
-}
-
-/* line 98, scss/components/_lightbox.scss */
-.lb-nav a {
-  outline: none;
-  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
-}
-
-/* line 103, scss/components/_lightbox.scss */
-.lb-prev, .lb-next {
-  height: 100%;
-  cursor: pointer;
-  display: block;
-}
-
-/* line 109, scss/components/_lightbox.scss */
-.lb-nav a.lb-prev {
-  width: 34%;
-  left: 0;
-  float: left;
-  background: url(../images/prev.png) left 48% no-repeat;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  -webkit-transition: opacity 0.6s;
-  -moz-transition: opacity 0.6s;
-  -o-transition: opacity 0.6s;
-  transition: opacity 0.6s;
-}
-
-/* line 122, scss/components/_lightbox.scss */
-.lb-nav a.lb-prev:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-
-/* line 127, scss/components/_lightbox.scss */
-.lb-nav a.lb-next {
-  width: 64%;
-  right: 0;
-  float: right;
-  background: url(../images/next.png) right 48% no-repeat;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  -webkit-transition: opacity 0.6s;
-  -moz-transition: opacity 0.6s;
-  -o-transition: opacity 0.6s;
-  transition: opacity 0.6s;
-}
-
-/* line 140, scss/components/_lightbox.scss */
-.lb-nav a.lb-next:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-
-/* line 145, scss/components/_lightbox.scss */
-.lb-dataContainer {
-  margin: 0 auto;
-  padding-top: 5px;
-  *zoom: 1;
-  width: 100%;
-  -moz-border-radius-bottomleft: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-/* line 158, scss/components/_lightbox.scss */
-.lb-dataContainer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* line 164, scss/components/_lightbox.scss */
-.lb-data {
-  padding: 0 4px;
-  color: #ccc;
-}
-
-/* line 169, scss/components/_lightbox.scss */
-.lb-data .lb-details {
-  width: 85%;
-  float: left;
-  text-align: left;
-  line-height: 1.1em;
-}
-
-/* line 176, scss/components/_lightbox.scss */
-.lb-data .lb-caption {
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 1em;
-}
-
-/* line 182, scss/components/_lightbox.scss */
-.lb-data .lb-number {
-  display: block;
-  clear: left;
-  padding-bottom: 1em;
-  font-size: 12px;
-  color: #999999;
-}
-
-/* line 190, scss/components/_lightbox.scss */
-.lb-data .lb-close {
-  display: block;
-  float: right;
-  width: 30px;
-  height: 30px;
-  background: url(../images/close.png) top right no-repeat;
-  text-align: right;
-  outline: none;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
-
-/* line 206, scss/components/_lightbox.scss */
-.lb-data .lb-close:hover {
-  cursor: pointer;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-
 /* line 2, scss/components/_rental.scss */
 .page-template-rental .site-header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/rental-bg.jpg");

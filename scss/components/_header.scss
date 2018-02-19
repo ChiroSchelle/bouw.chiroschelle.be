@@ -33,7 +33,7 @@
 	height: 30vh;
 	box-sizing: border-box;
 
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header2.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header-bouw.jpg");
 	background-position: center;
 	-webkit-background-size: 100%; 
     -moz-background-size: 100%; 
@@ -113,7 +113,7 @@
 				display: block;
 
 				float: left;
-				max-height: 14vh;
+				height: 125px;
 			}
 
 			.site-info-wrapper {
