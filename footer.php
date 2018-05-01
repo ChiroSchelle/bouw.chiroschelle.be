@@ -15,10 +15,10 @@
 	<footer class="site-footer" role="contentinfo">
 		<div class="container">
 			<div class="row">
-				
+
 				<div class="col-md-3 hidden-sm hidden-xs">
 					<img src="<?php bloginfo('template_directory'); ?>/img/logo_geef_kleur.png" alt="">
-				</div>	
+				</div>
 
 				<div class="col-md-3 col-sm-3 col-sm-offset-1 col-xs-5">
 					<h3><span class="border">Op de website</span></h3>
@@ -26,24 +26,24 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'footer-menu' ) ); ?>
 					</div>
 				</div>
-				
+
 				<div class="col-md-4 col-sm-7 col-xs-7">
 					<div class="news-letter">
 						<!-- Begin MailChimp Signup Form -->
 						<div id="mc_embed_signup">
-							<form action="//chiroschelle.us11.list-manage.com/subscribe/post?u=fe567bc2602efaa5c7eb040e8&amp;id=2d1ff2357d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mailchimp validate" target="_blank" novalidate>
-							    <div id="mc_embed_signup_scroll">
+							<form action="https://chiroschelle.us9.list-manage.com/subscribe/post?u=64d23a3209a2640ce2e7f37d1&amp;id=f572872947" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mailchimp validate" target="_blank" novalidate>
+								<div id="mc_embed_signup_scroll">
 								<h3><span class="border">Schrijf je in op onze nieuwsbrief</span></h3>
 
-								<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Vul hier je email adres in">
+								<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="e-mailadres">
 
 								<div id="mce-responses" class="clear">
 									<div class="response" id="mce-error-response" style="display:none"></div>
 									<div class="response" id="mce-success-response" style="display:none"></div>
 								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_fe567bc2602efaa5c7eb040e8_2d1ff2357d" tabindex="-1" value=""></div>
-							    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-							    </div>
+								<div style="position: absolute; left: -5000px;"><input type="text" name="b_64d23a3209a2640ce2e7f37d1_f572872947" tabindex="-1" value=""></div>
+								<div class="clear"><input type="submit" value="Schrijf in" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+								</div>
 							</form>
 						</div>
 						<!--End mc_embed_signup-->
