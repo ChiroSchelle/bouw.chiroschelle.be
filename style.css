@@ -213,17 +213,17 @@ input[type="text"] {
   margin: 0 auto;
   padding: 25px 0 0 0;
   display: block;
-  max-height: 230px;
+  max-height: 180px;
 }
 
-/* line 57, scss/components/_header.scss */
+/* line 56, scss/components/_header.scss */
 .site-header .site-branding .site-info-wrapper {
   float: left;
   margin-left: 10px;
   display: none;
 }
 
-/* line 62, scss/components/_header.scss */
+/* line 61, scss/components/_header.scss */
 .site-header .site-branding .site-info-wrapper .site-title {
   margin: 0;
   padding: 30px 0 0 0;
@@ -233,18 +233,18 @@ input[type="text"] {
   font-size: 5.8rem;
 }
 
-/* line 71, scss/components/_header.scss */
+/* line 70, scss/components/_header.scss */
 .site-header .site-branding .site-info-wrapper .site-title a {
   color: #FFF;
 }
 
-/* line 74, scss/components/_header.scss */
+/* line 73, scss/components/_header.scss */
 .site-header .site-branding .site-info-wrapper .site-title a:hover {
   text-decoration: none;
   color: #FFF;
 }
 
-/* line 81, scss/components/_header.scss */
+/* line 80, scss/components/_header.scss */
 .site-header .site-branding .site-info-wrapper .site-description {
   margin: 0;
   padding: 0;
@@ -257,18 +257,18 @@ input[type="text"] {
 }
 
 @media (min-width: 768px) {
-  /* line 100, scss/components/_header.scss */
+  /* line 99, scss/components/_header.scss */
   .site-header {
     height: auto;
     background-image: none;
   }
-  /* line 105, scss/components/_header.scss */
+  /* line 104, scss/components/_header.scss */
   .site-header .site-branding {
     position: relative;
     margin-top: 350px;
     margin-bottom: 25px;
   }
-  /* line 110, scss/components/_header.scss */
+  /* line 109, scss/components/_header.scss */
   .site-header .site-branding .site-logo {
     margin: 0;
     padding: 0;
@@ -276,14 +276,14 @@ input[type="text"] {
     float: left;
     height: 125px;
   }
-  /* line 119, scss/components/_header.scss */
+  /* line 118, scss/components/_header.scss */
   .site-header .site-branding .site-info-wrapper {
     display: block;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 127, scss/components/_header.scss */
+  /* line 126, scss/components/_header.scss */
   .container {
     width: 1170px;
   }
