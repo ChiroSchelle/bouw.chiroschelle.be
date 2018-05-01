@@ -21,7 +21,7 @@ var gulp = require('gulp'),
  * Development sass compiling and livereload
  */
 gulp.task('sass', function() { //main scss file compilen
-    return gulp.src('./sass/**/*.scss')
+    return gulp.src(sourceDir + 'scss/**/*.scss')
         .pipe(
             sass({
                 outputStyle: 'expanded',
