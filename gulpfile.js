@@ -11,7 +11,7 @@ var buildDir = 'build/';
 var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     jshint = require('gulp-jshint'),
-    sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     uglify  = require('gulp-uglify'),
     connect = require('gulp-connect')
     minifyHTML = require('gulp-minify-html'),
@@ -21,16 +21,17 @@ var gulp = require('gulp'),
  * Development sass compiling and livereload
  */
 gulp.task('sass', function() { //main scss file compilen
-    return sass(sourceDir + 'scss', {
-        'style': 'expanded', 
-        'lineNumbers': true
-    })
-    .on('error', function (err) {
-        console.error('Error!', err.message);
-    })
-    .pipe(gulp.dest(sourceDir))
+    return gulp.src('./sass/**/*.scss')
+        .pipe(
+            sass({
+                outputStyle: 'expanded',
+                sourceComments: true,
+            })
+            .on('error', sass.logError)
+        )
+        .pipe(gulp.dest(sourceDir))
 
-    .pipe(connect.reload());
+        .pipe(connect.reload());
 });
 
 /**
