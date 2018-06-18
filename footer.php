@@ -17,7 +17,7 @@
 			<div class="row">
 
 				<div class="col-md-3 hidden-sm hidden-xs">
-					<img src="<?php bloginfo('template_directory'); ?>/img/logo_geef_kleur.png" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/img/logo-footer.png" alt="">
 				</div>
 
 				<div class="col-md-3 col-sm-3 col-sm-offset-1 col-xs-5">

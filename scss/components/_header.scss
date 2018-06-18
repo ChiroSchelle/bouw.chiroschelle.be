@@ -33,24 +33,30 @@
 	height: 30vh;
 	box-sizing: border-box;
 
-	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header-bouw.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.44)), url("img/header-bouw-3.png");
 	background-position: center;
-	-webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover; 
+	background-position: -100px 00px;
+
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 
 	.site-branding {
 		@extend .clearfix;
+
 		.site-logo {
 			margin: 0 auto;
 			padding: 25px 0 0 0;
 			display: block;
 			max-height: 180px;
+			max-width: 100%;
+			margin-top: 60px;
 		}
 
 		.site-info-wrapper {
@@ -97,15 +103,14 @@
 
 @media (min-width : 768px) {
 	.site-header {
-		//height: 50vh;
 		height: auto;
-		//padding: 30vh 0 0 0;
 		background-image: none;
+
 		.site-branding {
 			position: relative;
-			margin-top: 350px;
+			margin-top: 200px;
 			margin-bottom: 25px;
-			
+
 			.site-logo {
 				margin: 0;
 				padding: 0;
@@ -124,6 +129,6 @@
 
 @media (min-width: 1200px) {
 	.container {
-	    width: 1170px;
+		width: 1170px;
 	}
 }

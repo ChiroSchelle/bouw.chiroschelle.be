@@ -20,23 +20,23 @@
 
 <?php if (is_page_template('contact.php')) { ?>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMosxiZ3jRg2z-3DILge7Iazc2tNjdxds"></script>
-    <script type="text/javascript">
-      	function initialize() {
-        	var mapOptions = {
-          		center: { lat: 51.124039, lng: 4.336228},
-          		zoom: 17
-        	};
-       	 	var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+	<script type="text/javascript">
+		function initialize() {
+			var mapOptions = {
+				center: { lat: 51.124039, lng: 4.336228},
+				zoom: 17
+			};
+			var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-       	 	var marker = new google.maps.Marker({
-			    position: { lat: 51.124039, lng: 4.336228},
-			    map: map,
-			    title: 'Chiro Schelle'
+			var marker = new google.maps.Marker({
+				position: { lat: 51.124039, lng: 4.336228},
+				map: map,
+				title: 'Chiro Schelle'
 			});
-      	}
+		}
 
-      	google.maps.event.addDomListener(window, 'load', initialize);
-   	</script>
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
 <?php } ; ?>
 
 <script>
@@ -67,35 +67,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="background"></div>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'chiro-schelle' ); ?></a>
-	
-	<!-- <div class="top-header">
-		<div class="container">
-			<ul>
-				<li>
-					<a href="/contact">Contact</a>
-				</li>
-				<li>
-					<a href="/wp-login.php?action=register">Registreer</a>
-				</li>
-				<li>
-					<a href="/wp-login.php">Login</a>
-				</li>
-			</ul>
-		</div>
-	</div> -->
 
 	<header class="site-header">
-
 		<div class="container">
 			<div class="site-branding">
-				<a href="<?php bloginfo("url") ?>" id="homelink"><img class="site-logo" src="<?php bloginfo('template_directory'); ?>/img/logo-bouw-white-on-black.svg" alt="logo Chiro Schelle" title="logo Chiro Schelle" /></a>
-				<!-- <div class="site-info-wrapper">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-				</div> -->
+				<a href="<?php bloginfo("url") ?>" id="homelink"><img class="site-logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="logo Chiro Schelle Bouwt" title="logo Chiro Schelle Bouwt" /></a>
 			</div>
 		</div>
-
 	</header>
 
 	<div class="container card main-container">
@@ -103,5 +81,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 			<button class="menu-toggle" id="toggle-menu" aria-controls="primary-menu" aria-expanded="false"><i class="glyphicon glyphicon-chevron-down"></i> Menu</button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-
 		</nav>

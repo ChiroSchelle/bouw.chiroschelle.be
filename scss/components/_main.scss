@@ -21,8 +21,8 @@ body {
 }
 
 .card {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-    background-color: #FFF;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+	background-color: #FFF;
 }
 
 .padding {
@@ -44,8 +44,8 @@ body {
 		height:100%;
 		width:100%;
 		position:fixed;
-		background-image: url("img/header-bouw.jpg");
-		background-position: center;
+		background-image: url("img/header-bouw-3.png");
+		background-position: -320px 0%;
 		background-size: cover;
 		z-index: -1;
 	}
@@ -62,6 +62,6 @@ body {
 
 @media (min-width: 1200px) {
 	.container {
-	    width: 1024px;
+		width: 1024px;
 	}
 }
